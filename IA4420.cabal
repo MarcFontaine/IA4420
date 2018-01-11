@@ -21,7 +21,7 @@ library
    , pretty
    , bytestring
    , STM32-Zombie >=0.2.0
-   , STLinkUSB >= 0.1.2
+   , STLinkUSB >= 0.1.1
                     		    
   Exposed-modules:
       TRX
