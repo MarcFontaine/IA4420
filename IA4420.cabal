@@ -1,0 +1,34 @@
+Name:          IA4420
+Version:       0.1
+Category:      Hardware, IoT, Radio, HAM, IA4420, RFM12
+Synopsis:      RFM12B FSK transceiver module / IA4420-chip hacking.
+Description:   Experiments with the RFM12 FSK tranceiver modules (IA4420-cip).
+               See README.md
+Copyright:     Marc Fontaine, 2016-2018
+License:       BSD3
+Stability:     Experimental
+Author:        Marc Fontaine
+Build-Type:    Simple
+Cabal-Version: >= 1.22
+
+library
+  default-language  : Haskell2010
+  ghc-options       : -Wall -threaded
+  Build-depends     :
+     base  >= 4 && < 5
+   , containers
+   , transformers
+   , pretty
+   , bytestring
+   , STM32-Zombie >=0.2.0
+   , STLinkUSB >= 0.1.2
+                    		    
+  Exposed-modules:
+      TRX
+    , IA4420              
+    , IA4420_Register
+    , VideoID
+    , Test
+    , ScanRSSI
+    , OOK
+    , IA4420_descr
